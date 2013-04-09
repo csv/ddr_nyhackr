@@ -13,23 +13,23 @@
 ## Why would you _NOT_ want to make music in R?
 
 
-### ![R is to Ducttape](/img/duct-tape-r.jpg)
+### ![R is to Ducttape](img/duct-tape-r.jpg)
 
 
-### ![Wallets](/img/duct-tape-wallet.jpg)
+### ![Wallets](img/duct-tape-wallet.jpg)
 
 
-### ![Suits](/img/duct-tape-suit.jpg)
+### ![Suits](img/duct-tape-suit.jpg)
 
 
-### ![AT-AT's](/img/duct-tape-at-at.jpg)
+### ![AT-AT's](img/duct-tape-at-at.jpg)
 
 
-### ![Planes](/img/duct-tape-plane.jpg)
+### ![Planes](img/duct-tape-plane.jpg)
 
 
 ### Let's face it...
-![You're not MacGyver](/img/not-macgyver.jpg)
+![You're not MacGyver](img/not-macgyver.jpg)
 
 
 ## The non-ducttape way...
@@ -223,12 +223,17 @@ writeWave(chords, "chords.wav")
 ```
 
 
+### Download ddr
+```
+library("devtools")
+install_github("ddr", "csv")
+library("ddr")
+```
+Use a fast connection to download!!!
 
-## Thanks!
 
 
-
-## FYI:
+### Thanks
 - Thomas Levine, data superhero, is available for hire.
 <br></br>
 - Our band, [CSV Soundsystem](http://www.csvsoundsystem.com/) is available to play your:
