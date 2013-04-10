@@ -62,33 +62,33 @@ ddr is severely limited by its reliance on wav manipulation.
 
 
 ### Basics
-<a target="_blank" href="examples/pianoC3.wav">
+<a href="examples/pianoC3.wav">
 ```
 piano$C3
 piano[["C3"]]
 ```
 </a>
-<a target="_blank" href="examples/pianoC3chopped.wav">
+<a href="examples/pianoC3chopped.wav">
 ```
 chop(piano$C3, bpm=100, count=1/8)
 ```
 </a>
-<a target="_blank" href="examples/pianoC3rev.wav">
+<a href="examples/pianoC3rev.wav">
 ```
 reverse(piano$C3)
 ```
 </a>
-<a target="_blank" href="examples/pianoC3pitched.wav">
+<a href="examples/pianoC3pitched.wav">
 ```
 chop(pitch(piano$C3, -36, FALSE), bpm=100, count=2)
 ```
 </a>
-<a target="_blank" href="examples/pianoC3choppedlooped.wav">
+<a href="examples/pianoC3choppedlooped.wav">
 ```
 loop(chop(piano$C3, bpm=100, count=1/8), 16)
 ```
 </a>
-<a target="_blank" href="examples/pianoC3chord.wav">
+<a href="examples/pianoC3chord.wav">
 ```
 chord(C3, piano, "maj", bpm=100, count=4)
 ```
@@ -96,7 +96,7 @@ chord(C3, piano, "maj", bpm=100, count=4)
 
 
 ### Sound Sequencing - _Call Me Maybe_
-<a target="_blank" href="examples/callmemaybe.wav">
+<a href="examples/callmemaybe.wav">
 
 ```
 c1 <- chord(A4, sweeplow, "maj", bpm=119, count=1)
@@ -124,7 +124,7 @@ play(loop(callmemaybe, 4))
 
 
 ### Randomly Generated Drums
-<a target="_blank" href="examples/randomdrumloop.wav">
+<a href="examples/randomdrumloop.wav">
 ```
 wavs <- list(roland$HHC, roland$TAM, roland$HHO, roland$BD1, roland$SD1)
 
@@ -143,7 +143,7 @@ play(loop(drum_loop, 4))
 
 ### Data Sonification
 Let's use ChickWeight - Iris is so played out...
-<a target="_blank" href="examples/chicks.wav">
+<a href="examples/chicks.wav">
 ```
 data('ChickWeight')
 cw <- ChickWeight
