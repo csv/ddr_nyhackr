@@ -13,23 +13,23 @@
 ## Why would you _NOT_ want to make music in R?
 
 
-### ![R is to Ducttape](img/duct-tape-r.jpg)
+### ![R is to Ducttape](../img/duct-tape-r.jpg)
 
 
-### ![Wallets](img/duct-tape-wallet.jpg)
+### ![Wallets](../img/duct-tape-wallet.jpg)
 
 
-### ![Suits](img/duct-tape-suit.jpg)
+### ![Suits](../img/duct-tape-suit.jpg)
 
 
-### ![AT-AT's](img/duct-tape-at-at.jpg)
+### ![AT-AT's](../img/duct-tape-at-at.jpg)
 
 
-### ![Planes](img/duct-tape-plane.jpg)
+### ![Planes](../img/duct-tape-plane.jpg)
 
 
 ### Let's face it...
-![You're not MacGyver](img/not-macgyver.jpg)
+![You're not MacGyver](../img/not-macgyver.jpg)
 
 
 ## The non-ducttape way...
@@ -56,39 +56,39 @@
 
 
 ## _Remember..._
-<center>![I'm not MacGyver](/img/not-macgyver.jpg)</center>
+<center>![I'm not MacGyver](../img/not-macgyver.jpg)</center>
 ddr is severely limited by its reliance on wav manipulation.
 
 
 
 ### Basics
-<a target="_blank" href="examples/pianoC3.wav">
+<a target="_blank" href="../examples/pianoC3.wav">
 ```
 piano$C3
 piano[["C3"]]
 ```
 </a>
-<a target="_blank" href="examples/pianoC3chopped.wav">
+<a target="_blank" href="../examples/pianoC3chopped.wav">
 ```
 chop(piano$C3, bpm=100, count=1/8)
 ```
 </a>
-<a target="_blank" href="examples/pianoC3rev.wav">
+<a target="_blank" href="../examples/pianoC3rev.wav">
 ```
 reverse(piano$C3)
 ```
 </a>
-<a target="_blank" href="examples/pianoC3pitched.wav">
+<a target="_blank" href="../examples/pianoC3pitched.wav">
 ```
 chop(pitch(piano$C3, -36, FALSE), bpm=100, count=2)
 ```
 </a>
-<a target="_blank" href="examples/pianoC3choppedlooped.wav">
+<a target="_blank" href="../examples/pianoC3choppedlooped.wav">
 ```
 loop(chop(piano$C3, bpm=100, count=1/8), 16)
 ```
 </a>
-<a target="_blank" href="examples/pianoC3chord.wav">
+<a target="_blank" href="../examples/pianoC3chord.wav">
 ```
 chord(C3, piano, "maj", bpm=100, count=4)
 ```
@@ -96,7 +96,7 @@ chord(C3, piano, "maj", bpm=100, count=4)
 
 
 ### Sound Sequencing - _Call Me Maybe_
-<a target="_blank" href="examples/callmemaybe.wav">
+<a target="_blank" href="../examples/callmemaybe.wav">
 
 ```
 c1 <- chord(A4, sweeplow, "maj", bpm=119, count=1)
@@ -124,7 +124,7 @@ play(loop(callmemaybe, 4))
 
 
 ### Randomly Generated Drums
-<a target="_blank" href="examples/randomdrumloop.wav">
+<a target="_blank" href="../examples/randomdrumloop.wav">
 ```
 wavs <- list(roland$HHC, roland$TAM, roland$HHO, roland$BD1, roland$SD1)
 
@@ -143,7 +143,7 @@ play(loop(drum_loop, 4))
 
 ### Data Sonification
 Let's use ChickWeight - Iris is so played out...
-<a target="_blank" href="examples/chicks.wav">
+<a target="_blank" href="../examples/chicks.wav">
 ```
 data('ChickWeight')
 cw <- ChickWeight
